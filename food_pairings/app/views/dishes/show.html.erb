@@ -1,7 +1,7 @@
 <h1><%= @dish.name %></h1>
 <!-- image? -->
 <p><%= @dish.description %></p>
-<p>This dish pairs well with SOMETHING</p> 
+<p>This dish pairs well with <%= link_to (@dish.drinks.first.name), drink_path(@dish.drinks.first) %>.</p> 
 
 <!-- STICKY FOOTER -->
 <p>
