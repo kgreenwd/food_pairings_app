@@ -1,0 +1,24 @@
+<h1>Index</h1>
+
+<h3>Dishes</h3>
+<% @dishes.each do |dish| %>
+  <p>
+    <%= link_to dish.name, dish_path(dish) %>
+  </p>
+<% end %> 
+
+<p><%= link_to "Add a New Dish", new_dish_path %></p>
+
+<h3>Drinks</h3>
+<% @drinks.each do |drink| %>
+  <p>
+    <%= link_to drink.name, drink_path(drink) %>
+  </p>
+<% end %> 
+
+<p><%= link_to "Add a New Drink", new_drink_path %></p>
+
+
+<!-- STICKY FOOTER -->
+<%= link_to "See Only Dishes", dishes_path %>
+<%= link_to "See Only Drinks", drinks_path %>

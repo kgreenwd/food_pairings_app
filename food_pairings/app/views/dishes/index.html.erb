@@ -1,0 +1,9 @@
+<h1>Dish Index</h1>
+
+<% @dishes.each do |dish| %>
+  <p>
+    <%= link_to dish.name, dish_path(dish) %>
+  </p>
+<% end %> 
+<!-- STICKY FOOTER -->
+<%= link_to "Back to Home", root_path %>

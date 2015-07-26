@@ -1,0 +1,11 @@
+<h1><%= @drink.name %></h1>
+<!-- image? -->
+<p><%= @drink.description %></p>
+<p>This drink pairs well with SOMETHING</p> 
+
+<!-- STICKY FOOTER -->
+<p>
+  <%= link_to "Edit", edit_drink_path(@drink) %>
+  <%= link_to 'Delete', drink_path(@drink), method: :delete, data: { confirm: 'Are you sure?' } %>
+</p>
+<p><%= link_to "Index", root_path %></p>

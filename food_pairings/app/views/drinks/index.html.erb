@@ -1,0 +1,9 @@
+<h1>Drink Index</h1>
+
+<% @drinks.each do |drink| %>
+  <p>
+    <%= link_to drink.name, drink_path(drink) %>
+  </p>
+<% end %> 
+<!-- STICKY FOOTER -->
+<%= link_to "Back to Home", root_path %>
